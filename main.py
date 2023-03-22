@@ -11,15 +11,15 @@ bot = telebot.TeleBot(API_KEY)
 # def echo_all(message):
 # 	bot.reply_to(message, message.text)
 
-@bot.message_handler(commands = ['start', 'help'])
+@bot.message_handler(commands = ['start', 'help', '?'])
 def welcome(message):
     bot.reply_to(message, """\
         Hi there, I am Shaunniee. Here are some basic commands.
     /everyone -- Pings everyone
     /joke -- Tell me a joke
-    /wsb -- Tell me stcok prices""")
+    /wsb -- Tell me stock prices""")
 
-@bot.message_handler(commands = ['everyone'])
+@bot.message_handler(commands = ['everyone', 'ping'])
 def greet(message):
     bot.reply_to(message, "@itsernesttt @m1l0p3ng")
 
