@@ -6,7 +6,7 @@ This telegram bot can reply to user messages and return stock prices and charts 
 
 ## Features
 
-- Stock Prices
+- Retrieve stock prices
 - Candlestick chart based on specified timeframe
 - Jokes
 
